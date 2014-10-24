@@ -7,8 +7,33 @@
         height: 10px;
     }
 }
-.content {
-    
+.Update {
+        width: 1500px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+.UpdateBody {
+        position: relative;
+        margin-bottom: 20px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #eee;
+    }
+.pagehead {
+        position: relative;
+        margin-bottom: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #eee;
+    }
+.navbox {
+    width: 200px!important;
+    height:100%;
+    float:left;
+    margin-left:0px;
+    margin-right:0px;
+}
+projectgrid {
 }
 </style>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -58,8 +83,8 @@
           </div><!-- /.container-fluid -->
         </nav>
     </div>
-    <div class="supercolumn col-md-2" style="margin-right: 25px; height: 700px; padding-left: 0px; padding-right:0px!important; border-right-style: solid; border-color: lightgray; border-width: thin;">
-        <ul class="nav nav-tabs-stacked" role="tablist" id="myTab">
+    <div class="navbox container">
+        <ul class="nav nav-tabs-stacked" role="tablist" style="display:block" id="myTab">
             <li class="active"><a href="#home" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-home"></span> Home</a></li>
             <li><a href="#profile" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
             <li><a href="#messages" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-envelope"></span> Messages</a></li>
@@ -69,7 +94,21 @@
     <div class="row" style="height: 100px;">
         <div class="content tab-content">
             <div class="tab-pane fade in active" id="home">
-                <h1>Updates</h1>
+                <div class="pagehead">
+                    <div class="container">
+                        <h3>Updates</h3>
+                    </div>
+                </div>
+                <div class="UpdateBody">
+                    <div class="Update context-loader-container">
+                        <div class="projectgrid bs-docs-grid">
+                            <div class="row show-grid">
+                                <div class="ProjectUpdates col-md-3" style="width:100%"><h4>Project Updates</h4></div>
+                                <div class="InputTemplate col-md-3"></div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="tab-pane fade" id="profile">

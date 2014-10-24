@@ -157,6 +157,7 @@
                             <div class="group">
                                 <input type="text" id="grouptb" class="hide form-control" placeholder="Group Name" style="margin-top: 20px" />
                             </div>
+
                             <button type="button" class="btn btn-primary" style="margin-top: 20px; margin-left: 915px;">Submit</button>
                         </div>
                     </div>
